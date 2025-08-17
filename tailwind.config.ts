@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'cyber-header': ['Orbitron', 'monospace'],
+				'cyber-body': ['Share Tech Mono', 'monospace'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,16 +56,22 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				// Cyberpunk color system
+				'cyber-green': 'hsl(var(--cyber-green))',
+				'cyber-cyan': 'hsl(var(--cyber-cyan))',
+				'cyber-magenta': 'hsl(var(--cyber-magenta))',
+				'cyber-yellow': 'hsl(var(--cyber-yellow))',
+				'cyber-pink': 'hsl(var(--cyber-pink))',
+				'cyber-purple': 'hsl(var(--cyber-purple))',
+			},
+			backgroundImage: {
+				'gradient-cyber': 'var(--gradient-cyber)',
+				'gradient-glow': 'var(--gradient-glow)',
+			},
+			boxShadow: {
+				'glow-green': 'var(--glow-green)',
+				'glow-cyan': 'var(--glow-cyan)',
+				'glow-magenta': 'var(--glow-magenta)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
